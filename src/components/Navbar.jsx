@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, FileDown } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./BrandIcons.jsx";
 
+const base = import.meta.env.BASE_URL || "/";
+
 const LINKS = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -70,7 +72,7 @@ export default function Navbar({ github, linkedin }) {
           >
             <LinkedinIcon size={19} />
           </a>
-          <a href="/resume_sifat.pdf" download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs">
+          <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs">
             <FileDown size={15} />
             Resume
           </a>
@@ -114,7 +116,7 @@ export default function Navbar({ github, linkedin }) {
                 <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="text-ink-400">
                   <LinkedinIcon size={20} />
                 </a>
-                <a href="/resume_sifat.pdf" download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs ml-auto">
+                <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs ml-auto">
                   <FileDown size={15} />
                   Resume
                 </a>

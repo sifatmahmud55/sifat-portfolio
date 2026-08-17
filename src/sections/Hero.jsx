@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, FileDown, Mail, ExternalLink } from "lucide-react";
 import { contact } from "../data/profile.js";
 
+const base = import.meta.env.BASE_URL || "/";
+
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
@@ -33,11 +35,11 @@ export default function Hero() {
               View My Projects
               <ArrowRight size={16} />
             </a>
-            <a href="/resume_sifat.pdf" download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary">
+            <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary">
               <FileDown size={16} />
               Download Resume
             </a>
-            <a href="/resume_sifat.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary border border-white/10 bg-transparent">
+            <a href={`${base}resume_sifat.pdf`} target="_blank" rel="noopener noreferrer" className="btn-secondary border border-white/10 bg-transparent">
               <ExternalLink size={14} />
               View Resume
             </a>
@@ -67,7 +69,7 @@ export default function Hero() {
           <div className="pointer-events-none absolute inset-0 rounded-full bg-signal-cyan/5 blur-3xl" />
           <div className="relative mx-auto flex w-full max-w-[420px] items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.02] p-3 shadow-[0_25px_80px_rgba(14,165,233,0.12)] backdrop-blur-sm">
             <img
-              src="/profile.jpeg"
+              src={`${base}profile.jpeg`}
               alt="Soiyod Sifat Mahmud"
               className="h-[320px] w-full max-w-[360px] rounded-[1.4rem] object-cover object-center shadow-[0_10px_30px_rgba(15,23,42,0.45)] sm:h-[380px] lg:h-[460px]"
             />

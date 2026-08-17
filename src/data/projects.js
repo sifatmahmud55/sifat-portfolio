@@ -1,6 +1,9 @@
 // Central project data source. Edit this file to add, remove, or update projects —
 // every card, filter, and case-study modal reads from here.
 
+const base = import.meta.env.BASE_URL || "/";
+const withBase = (path) => `${base}${path.replace(/^\/+/, "")}`;
+
 export const CATEGORIES = ["All", "AI/ML", "Software", "IoT", "Embedded", "Computer Vision"];
 
 export const projects = [
@@ -45,7 +48,7 @@ export const projects = [
       "Building a real document-processing pipeline surfaced how much production AI work is data plumbing — parsing, chunking, and indexing — before the LLM ever sees a prompt.",
     github: null,
     demo: "https://sifatmahmud55.github.io/Mentoraa/",
-    image: "/mentora.jpg",
+    image: withBase("mentora.jpg"),
   },
   {
     id: "smart-env-monitor",
@@ -77,7 +80,7 @@ export const projects = [
       "Gained a much clearer picture of the full IoT stack — from firmware and message brokers to how that data eventually becomes something readable on a screen.",
     github: null,
     demo: null,
-    image: "/iot.png",
+    image: withBase("iot.png"),
   },
   {
     id: "visiondrive",
@@ -101,7 +104,7 @@ export const projects = [
       "Learned how much systems design matters in embedded AI — splitting inference and motor control across two boards was necessary for both to run reliably.",
     github: null,
     demo: null,
-    image: "/Roboscout_1.jpeg",
+    image: withBase("Roboscout_1.jpeg"),
   },
   {
     id: "progressnest",
@@ -120,7 +123,7 @@ export const projects = [
     learnings: null,
     github: null,
     demo: null,
-    image: "/progressnest.png",
+    image: withBase("progressnest.png"),
   },
   {
     id: "smart-home-security",
@@ -151,6 +154,6 @@ export const projects = [
       "Reinforced the fundamentals of interrupt handling and sensor calibration in a system where false positives and false negatives both carry real cost.",
     github: null,
     demo: null,
-    image: "/safety.jpeg",
+    image: withBase("safety.jpeg"),
   },
 ];

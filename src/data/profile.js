@@ -1,3 +1,6 @@
+const base = import.meta.env.BASE_URL || "/";
+const withBase = (path) => `${base}${path.replace(/^\/+/, "")}`;
+
 export const skillGroups = [
   {
     title: "Programming",
@@ -94,7 +97,7 @@ export const experience = [
     role: "Industrial Attachment",
     org: "Brain Station 23",
     duration: "1 Week",
-    image: "/Brainstation.png",
+    image: withBase("Brainstation.png"),
     points: [
       "Studied fintech applications in the Bangladeshi market, including internet and mobile banking, BQR, digital payments, and investment schemes.",
       "Explored how AI is applied within fintech products and digital financial experiences.",
@@ -105,7 +108,7 @@ export const experience = [
     role: "Industrial Attachment",
     org: "FactoryNext",
     duration: "1 Week",
-    image: "/factorynext.png",
+    image: withBase("factorynext.png"),
     points: [
       "Successfully completed a one-week industrial attachment at FactoryNext, where I worked on sensor-based and ESP32 projects, gaining valuable hands-on experience in IoT and embedded systems.",
       "Grateful to the FactoryNext team for their guidance and support. This experience enhanced my technical skills and provided valuable insights into real-world engineering applications.",
