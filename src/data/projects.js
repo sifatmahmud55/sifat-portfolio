@@ -126,6 +126,48 @@ export const projects = [
     image: withBase("progressnest.png"),
   },
   {
+    id: "robo-advisor",
+    title: "Robo-Advisor Investment Chatbot",
+    subtitle: "AI-Powered Investment Advisor for Bangladeshi Market",
+    category: ["AI/ML", "Software"],
+    featured: true,
+    description:
+      "A specialized investment chatbot tailored for the Bangladeshi market that assists users in identifying optimal investment opportunities by analyzing financial profiles and risk appetite.",
+    problem:
+      "Individual investors struggle to make informed investment decisions without personalized guidance. Generic financial tools don't account for market-specific opportunities or personal financial constraints.",
+    solution:
+      "An AI-driven chatbot powered by OpenRouter that analyzes user input (earnings, capital, objectives, risk appetite, timelines) and provides intelligent, market-specific investment recommendations through conversational interaction.",
+    features: [
+      "Personalized investment recommendations",
+      "Monthly earnings and capital analysis",
+      "Financial objectives assessment",
+      "Risk appetite evaluation",
+      "Investment timeline planning",
+      "AI-driven conversational interface",
+      "Multi-LLM support via OpenRouter",
+      "Real-time investment advice",
+    ],
+    tech: [
+      "FastAPI",
+      "OpenRouter API",
+      "LLM Models",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Vercel",
+      "Prompt Engineering",
+      "Python",
+    ],
+    architecture: ["User Input", "AI Analysis Engine", "Intelligent Recommendation Logic", "Dataset Filtering", "Chat Interface", "Investment Recommendations"],
+    challenges:
+      "Orchestrating multiple LLMs through a unified API while maintaining cost efficiency, and building recommendation logic that accurately reflects the Bangladeshi investment landscape.",
+    learnings:
+      "Gained deep experience in AI model orchestration, prompt engineering for financial advisory, and leveraging open-source models for cost-effective AI deployment in production systems.",
+    github: "https://lnkd.in/gmAsusXU",
+    demo: "https://lnkd.in/ghJzuAgc",
+    image: withBase("roboadvisor.png"),
+  },
+  {
     id: "smart-home-security",
     title: "Smart Home Safety & Security System",
     subtitle: "Embedded Intrusion & Environmental Safety",
