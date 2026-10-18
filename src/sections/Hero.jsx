@@ -71,7 +71,7 @@ export default function Hero() {
             <img
               src={`${base}profile.jpeg`}
               alt="Soiyod Sifat Mahmud"
-              className="h-[320px] w-full max-w-[360px] rounded-[1.4rem] object-cover object-center shadow-[0_10px_30px_rgba(15,23,42,0.45)] sm:h-[380px] lg:h-[460px]"
+              className="h-auto w-full max-w-[360px] rounded-[1.4rem] shadow-[0_10px_30px_rgba(15,23,42,0.45)]"
             />
           </div>
         </motion.div>
