@@ -72,7 +72,7 @@ export default function Navbar({ github, linkedin }) {
           >
             <LinkedinIcon size={19} />
           </a>
-          <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs">
+          <a href={`${base}Soiyod_Sifat_Mahmud_CV.pdf`} download="Soiyod_Sifat_Mahmud_CV.pdf" className="btn-secondary !py-2 !px-4 text-xs">
             <FileDown size={15} />
             Resume
           </a>
@@ -116,7 +116,7 @@ export default function Navbar({ github, linkedin }) {
                 <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" className="text-ink-400">
                   <LinkedinIcon size={20} />
                 </a>
-                <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary !py-2 !px-4 text-xs ml-auto">
+                <a href={`${base}Soiyod_Sifat_Mahmud_CV.pdf`} download="Soiyod_Sifat_Mahmud_CV.pdf" className="btn-secondary !py-2 !px-4 text-xs ml-auto">
                   <FileDown size={15} />
                   Resume
                 </a>

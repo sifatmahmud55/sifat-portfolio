@@ -35,11 +35,11 @@ export default function Hero() {
               View My Projects
               <ArrowRight size={16} />
             </a>
-            <a href={`${base}resume_sifat.pdf`} download="Soiyod_Sifat_Mahmud_Resume.pdf" className="btn-secondary">
+            <a href={`${base}Soiyod_Sifat_Mahmud_CV.pdf`} download="Soiyod_Sifat_Mahmud_CV.pdf" className="btn-secondary">
               <FileDown size={16} />
               Download Resume
             </a>
-            <a href={`${base}resume_sifat.pdf`} target="_blank" rel="noopener noreferrer" className="btn-secondary border border-white/10 bg-transparent">
+            <a href={`${base}Soiyod_Sifat_Mahmud_CV.pdf`} target="_blank" rel="noopener noreferrer" className="btn-secondary border border-white/10 bg-transparent">
               <ExternalLink size={14} />
               View Resume
             </a>
